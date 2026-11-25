@@ -196,6 +196,20 @@ a {
   animation: fadeUp 0.8s ease both;
 }
 
+.hours-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .hero-content h1,
 .hero-content .tagline,
 .hero-content .hero-lead,
