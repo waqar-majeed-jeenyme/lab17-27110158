@@ -7,6 +7,7 @@
   <meta name="description" content="Chai Corner is a modern Pakistani café serving chai, snacks, and warm hospitality." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,6 +28,7 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="#menu">Menu</a>
+        <a href="#atmosphere">Atmosphere</a>
         <a href="#about">About</a>
         <a href="about.html">Our Story</a>
         <a href="#contact" class="nav-cta">Visit Us</a>
@@ -37,6 +39,7 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-media" role="img" aria-label="Steaming cup of chai on a wooden table"></div>
+      <div class="hero-steam" aria-hidden="true"></div>
       <div class="container hero-content">
         <p class="eyebrow">Modern Pakistani Café</p>
         <p class="hours-chip" aria-label="Opening hours">Open daily · 9:00 am – 11:00 pm</p>
@@ -54,30 +57,48 @@
     </section>
 
     <section class="intro section" aria-labelledby="intro-heading">
-      <div class="container intro-grid">
-        <div>
+      <div class="container intro-grid reveal">
+        <div class="intro-copy">
           <h2 id="intro-heading">A quiet pause in your day</h2>
           <p>
             Chai Corner is imagined as a warm stop for students, friends, and families who want proper Pakistani chai,
             light bites, and a calm place to sit. This website is a student demonstration project — not a live business listing.
           </p>
+          <ul class="intro-points">
+            <li>Hand-brewed chai blends</li>
+            <li>Fresh snacks made daily</li>
+            <li>Welcoming seats for work or conversation</li>
+          </ul>
         </div>
-        <ul class="intro-points">
-          <li>Hand-brewed chai blends</li>
-          <li>Fresh snacks made daily</li>
-          <li>Welcoming seats for work or conversation</li>
-        </ul>
+        <div class="intro-collage" aria-hidden="true">
+          <img
+            class="collage-main"
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
+            alt=""
+            width="900"
+            height="1100"
+            loading="lazy"
+          />
+          <img
+            class="collage-float"
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=80"
+            alt=""
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
 
     <section id="menu" class="section menu-section" aria-labelledby="menu-heading">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <h2 id="menu-heading">Menu</h2>
           <p>Eight favourites across chai, snacks, and sweets. Prices shown in Pakistani Rupees.</p>
         </div>
 
-        <div class="menu-filters" role="tablist" aria-label="Menu categories" aria-controls="menu-grid">
+        <div class="menu-filters reveal" role="tablist" aria-label="Menu categories" aria-controls="menu-grid">
           <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
           <button type="button" class="filter-btn" data-filter="chai" role="tab" aria-selected="false">Chai</button>
           <button type="button" class="filter-btn" data-filter="snacks" role="tab" aria-selected="false">Snacks</button>
@@ -85,82 +106,146 @@
         </div>
 
         <div class="menu-grid" id="menu-grid">
-          <article class="menu-card" data-category="chai">
-            <div class="menu-icon" aria-hidden="true">☕</div>
-            <h3>Classic Doodh Patti</h3>
-            <p>Strong tea, full milk, and a soft sweetness.</p>
-            <p class="price">PKR 250</p>
+          <article class="menu-card reveal" data-category="chai">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1571934811359-d07dcbafa6b8?auto=format&fit=crop&w=700&q=80" alt="Cup of classic milk tea" width="700" height="480" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <h3>Classic Doodh Patti</h3>
+              <p>Strong tea, full milk, and a soft sweetness.</p>
+              <p class="price">PKR 250</p>
+            </div>
           </article>
-          <article class="menu-card" data-category="chai">
-            <div class="menu-icon" aria-hidden="true">🌿</div>
-            <h3>Elaichi Chai</h3>
-            <p>Cardamom-forward and aromatic.</p>
-            <p class="price">PKR 280</p>
+          <article class="menu-card reveal" data-category="chai">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format&fit=crop&w=700&q=80" alt="Spiced tea with cardamom" width="700" height="480" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <h3>Elaichi Chai</h3>
+              <p>Cardamom-forward and aromatic.</p>
+              <p class="price">PKR 280</p>
+            </div>
           </article>
-          <article class="menu-card" data-category="chai">
-            <div class="menu-icon" aria-hidden="true">🫚</div>
-            <h3>Adrak Chai</h3>
-            <p>Fresh ginger for a warming kick.</p>
-            <p class="price">PKR 280</p>
+          <article class="menu-card reveal" data-category="chai">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=700&q=80" alt="Hot ginger tea in a cup" width="700" height="480" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <h3>Adrak Chai</h3>
+              <p>Fresh ginger for a warming kick.</p>
+              <p class="price">PKR 280</p>
+            </div>
           </article>
-          <article class="menu-card" data-category="snacks">
-            <div class="menu-icon" aria-hidden="true">🥟</div>
-            <h3>Chicken Samosa</h3>
-            <p>Crispy pastry with spiced filling. Two pieces.</p>
-            <p class="price">PKR 320</p>
+          <article class="menu-card reveal" data-category="snacks">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80" alt="Crispy samosas on a plate" width="700" height="480" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <h3>Chicken Samosa</h3>
+              <p>Crispy pastry with spiced filling. Two pieces.</p>
+              <p class="price">PKR 320</p>
+            </div>
           </article>
-          <article class="menu-card" data-category="snacks">
-            <div class="menu-icon" aria-hidden="true">🥪</div>
-            <h3>Bun Kabab</h3>
-            <p>Soft bun, chutney, and a savoury patty.</p>
-            <p class="price">PKR 450</p>
+          <article class="menu-card reveal" data-category="snacks">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Soft bun sandwich with filling" width="700" height="480" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <h3>Bun Kabab</h3>
+              <p>Soft bun, chutney, and a savoury patty.</p>
+              <p class="price">PKR 450</p>
+            </div>
           </article>
-          <article class="menu-card" data-category="snacks">
-            <div class="menu-icon" aria-hidden="true">🍟</div>
-            <h3>Masala Fries</h3>
-            <p>Crisp fries tossed with café spices.</p>
-            <p class="price">PKR 380</p>
+          <article class="menu-card reveal" data-category="snacks">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Seasoned fries in a bowl" width="700" height="480" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <h3>Masala Fries</h3>
+              <p>Crisp fries tossed with café spices.</p>
+              <p class="price">PKR 380</p>
+            </div>
           </article>
-          <article class="menu-card" data-category="sweets">
-            <div class="menu-icon" aria-hidden="true">🍮</div>
-            <h3>Gajar Halwa Cup</h3>
-            <p>Warm carrot dessert with pistachio notes.</p>
-            <p class="price">PKR 420</p>
+          <article class="menu-card reveal" data-category="sweets">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Warm dessert served in a cup" width="700" height="480" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <h3>Gajar Halwa Cup</h3>
+              <p>Warm carrot dessert with pistachio notes.</p>
+              <p class="price">PKR 420</p>
+            </div>
           </article>
-          <article class="menu-card" data-category="sweets">
-            <div class="menu-icon" aria-hidden="true">🍰</div>
-            <h3>Chocolate Brownie</h3>
-            <p>Dense, fudgy slice with a chai pairing in mind.</p>
-            <p class="price">PKR 390</p>
+          <article class="menu-card reveal" data-category="sweets">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80" alt="Chocolate brownie square" width="700" height="480" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <h3>Chocolate Brownie</h3>
+              <p>Dense, fudgy slice with a chai pairing in mind.</p>
+              <p class="price">PKR 390</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
+    <section id="atmosphere" class="section atmosphere-section" aria-labelledby="atmosphere-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="atmosphere-heading">The feeling of the room</h2>
+          <p>Soft light, shared tables, and the quiet ritual of waiting for the next pour.</p>
+        </div>
+        <div class="atmosphere-grid reveal">
+          <figure class="atmosphere-card wide">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=80" alt="Warm café lighting over coffee cups" width="1400" height="900" loading="lazy" />
+            <figcaption>Morning light on the counter</figcaption>
+          </figure>
+          <figure class="atmosphere-card">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80" alt="Café interior with wooden tables" width="900" height="1100" loading="lazy" />
+            <figcaption>Quiet corners for conversation</figcaption>
+          </figure>
+          <figure class="atmosphere-card">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80" alt="Freshly poured coffee and chai cups" width="900" height="1100" loading="lazy" />
+            <figcaption>Fresh pots, poured to order</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section about-preview" aria-labelledby="about-heading">
-      <div class="container about-grid">
+      <div class="container about-grid reveal">
+        <div class="about-visual">
+          <img
+            src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1100&q=80"
+            alt="People chatting at a café table"
+            width="1100"
+            height="800"
+            loading="lazy"
+          />
+        </div>
         <div class="about-copy">
           <h2 id="about-heading">About Us</h2>
           <p>
             Chai Corner began as a simple idea: a modern Pakistani café where hospitality feels personal and every cup
             is poured with intention. This page content is fictional demonstration copy for DISC 472 Lab 17.
           </p>
+          <div class="about-panel">
+            <h3>What we value</h3>
+            <ul>
+              <li>Warm welcome for every guest</li>
+              <li>Honest ingredients and careful preparation</li>
+              <li>A calm space for conversation</li>
+            </ul>
+            <p class="meta">Concept date: 23 November 2026</p>
+          </div>
           <a class="btn btn-primary" href="about.html">Read Our Story</a>
-        </div>
-        <div class="about-panel">
-          <h3>What we value</h3>
-          <ul>
-            <li>Warm welcome for every guest</li>
-            <li>Honest ingredients and careful preparation</li>
-            <li>A calm space for conversation</li>
-          </ul>
-          <p class="meta">Concept date: 23 November 2026</p>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
-      <div class="container contact-grid">
+      <div class="container contact-grid reveal">
         <div>
           <h2 id="contact-heading">Contact</h2>
           <p>
@@ -171,6 +256,15 @@
             <li><strong>Demo hours:</strong> Daily, 9:00 am – 11:00 pm</li>
             <li><strong>Demo phone:</strong> 03001234567</li>
           </ul>
+          <div class="contact-photo">
+            <img
+              src="https://images.unsplash.com/photo-1453614512568-c40289d43bdc?auto=format&fit=crop&w=900&q=80"
+              alt="Café counter ready for guests"
+              width="900"
+              height="600"
+              loading="lazy"
+            />
+          </div>
         </div>
 
         <form id="contact-form" class="contact-form" novalidate>
@@ -208,7 +302,7 @@
         <p>Your Daily Cup of Happiness</p>
       </div>
       <div>
-        <p>Demonstration café website for DISC 472 Lab 17 — live update verified.</p>
+        <p>Demonstration café website for DISC 472 Lab 17.</p>
         <p>Roll number 27110158</p>
       </div>
       <nav aria-label="Footer">

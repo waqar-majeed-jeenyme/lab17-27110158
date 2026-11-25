@@ -7,6 +7,7 @@
   <meta name="description" content="Learn the fictional demonstration story behind Chai Corner, a modern Pakistani café concept." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,6 +28,7 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html#menu">Menu</a>
+        <a href="index.html#atmosphere">Atmosphere</a>
         <a href="index.html#about">About</a>
         <a href="about.html" aria-current="page">Our Story</a>
         <a href="index.html#contact" class="nav-cta">Visit Us</a>
@@ -35,8 +37,9 @@
   </header>
 
   <main id="main">
-    <section class="page-hero section" aria-labelledby="story-heading">
-      <div class="container narrow">
+    <section class="story-banner" aria-labelledby="story-heading">
+      <div class="story-banner-media" role="img" aria-label="Café interior with warm ambient lighting"></div>
+      <div class="container narrow story-banner-copy">
         <p class="eyebrow">Our Story</p>
         <h1 id="story-heading">Built around the daily cup</h1>
         <p class="lead">
@@ -48,39 +51,57 @@
 
     <section class="section">
       <div class="container story-grid">
-        <article class="story-card">
-          <h2>How the idea started</h2>
-          <p>
-            The concept imagines a small team that wanted a café where chai is the centrepiece — not an afterthought.
-            Guests could arrive for a quiet morning cup, a quick snack between classes, or an evening catch-up with friends.
-          </p>
+        <article class="story-card reveal">
+          <img
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80"
+            alt="Tea being poured into cups"
+            width="900"
+            height="600"
+            loading="lazy"
+          />
+          <div class="story-card-body">
+            <h2>How the idea started</h2>
+            <p>
+              The concept imagines a small team that wanted a café where chai is the centrepiece — not an afterthought.
+              Guests could arrive for a quiet morning cup, a quick snack between classes, or an evening catch-up with friends.
+            </p>
+          </div>
         </article>
-        <article class="story-card">
-          <h2>What makes it feel like home</h2>
-          <p>
-            Warm lighting, rounded seating nooks, and a menu that stays familiar: doodh patti, samosas, and a few sweets
-            that pair well with chai. The look stays cream, brown, and orange — calm, not loud.
-          </p>
+        <article class="story-card reveal">
+          <img
+            src="https://images.unsplash.com/photo-1559925393-8be0eccf6f39?auto=format&fit=crop&w=900&q=80"
+            alt="Cosy café seating area"
+            width="900"
+            height="600"
+            loading="lazy"
+          />
+          <div class="story-card-body">
+            <h2>What makes it feel like home</h2>
+            <p>
+              Warm lighting, rounded seating nooks, and a menu that stays familiar: doodh patti, samosas, and a few sweets
+              that pair well with chai. The look stays cream, brown, and orange — calm, not loud.
+            </p>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="section values-section" aria-labelledby="values-heading">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <h2 id="values-heading">Brand values</h2>
           <p>Principles that guide the Chai Corner demonstration brand.</p>
         </div>
         <div class="values-grid">
-          <article class="value-card">
+          <article class="value-card reveal">
             <h3>Warmth</h3>
             <p>Every guest should feel welcomed within the first minute.</p>
           </article>
-          <article class="value-card">
+          <article class="value-card reveal">
             <h3>Care</h3>
             <p>Simple recipes done carefully beat complicated menus done poorly.</p>
           </article>
-          <article class="value-card">
+          <article class="value-card reveal">
             <h3>Belonging</h3>
             <p>A café for conversation, study, and everyday rituals.</p>
           </article>
@@ -101,7 +122,7 @@
         <p>Your Daily Cup of Happiness</p>
       </div>
       <div>
-        <p>Demonstration café website for DISC 472 Lab 17 — live update verified.</p>
+        <p>Demonstration café website for DISC 472 Lab 17.</p>
         <p>Roll number 27110158</p>
       </div>
       <nav aria-label="Footer">
