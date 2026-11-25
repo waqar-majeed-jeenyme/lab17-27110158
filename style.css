@@ -599,3 +599,9 @@ a {
     transition: none !important;
   }
 }
+
+/* Accessibility focus improvements for keyboard users */
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
