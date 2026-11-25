@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chai Corner — Your Daily Cup of Happiness</title>
+  <meta name="description" content="Chai Corner is a modern Pakistani café serving chai, snacks, and warm hospitality." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Chai Corner home">
+        <span class="brand-mark" aria-hidden="true">茶</span>
+        <span class="brand-text">
+          <strong>Chai Corner</strong>
+          <small>Your Daily Cup of Happiness</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="about.html">Our Story</a>
+        <a href="#contact" class="nav-cta">Visit Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-media" role="img" aria-label="Steaming cup of chai on a wooden table"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Modern Pakistani Café</p>
+        <h1 id="hero-heading">Chai Corner</h1>
+        <p class="tagline">Your Daily Cup of Happiness</p>
+        <p class="hero-lead">
+          Slow mornings, shared tables, and chai poured with care — demonstration content for a neighbourhood café concept.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore the Menu</a>
+          <a class="btn btn-secondary" href="#contact">Plan Your Visit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" aria-labelledby="intro-heading">
+      <div class="container intro-grid">
+        <div>
+          <h2 id="intro-heading">A quiet pause in your day</h2>
+          <p>
+            Chai Corner is imagined as a warm stop for students, friends, and families who want proper Pakistani chai,
+            light bites, and a calm place to sit. This website is a student demonstration project — not a live business listing.
+          </p>
+        </div>
+        <ul class="intro-points">
+          <li>Hand-brewed chai blends</li>
+          <li>Fresh snacks made daily</li>
+          <li>Welcoming seats for work or conversation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="menu-heading">Menu</h2>
+          <p>Eight favourites across chai, snacks, and sweets. Prices shown in Pakistani Rupees.</p>
+        </div>
+
+        <div class="menu-filters" role="tablist" aria-label="Menu categories">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter-btn" data-filter="chai" role="tab" aria-selected="false">Chai</button>
+          <button type="button" class="filter-btn" data-filter="snacks" role="tab" aria-selected="false">Snacks</button>
+          <button type="button" class="filter-btn" data-filter="sweets" role="tab" aria-selected="false">Sweets</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <article class="menu-card" data-category="chai">
+            <div class="menu-icon" aria-hidden="true">☕</div>
+            <h3>Classic Doodh Patti</h3>
+            <p>Strong tea, full milk, and a soft sweetness.</p>
+            <p class="price">PKR 250</p>
+          </article>
+          <article class="menu-card" data-category="chai">
+            <div class="menu-icon" aria-hidden="true">🌿</div>
+            <h3>Elaichi Chai</h3>
+            <p>Cardamom-forward and aromatic.</p>
+            <p class="price">PKR 280</p>
+          </article>
+          <article class="menu-card" data-category="chai">
+            <div class="menu-icon" aria-hidden="true">🫚</div>
+            <h3>Adrak Chai</h3>
+            <p>Fresh ginger for a warming kick.</p>
+            <p class="price">PKR 280</p>
+          </article>
+          <article class="menu-card" data-category="snacks">
+            <div class="menu-icon" aria-hidden="true">🥟</div>
+            <h3>Chicken Samosa</h3>
+            <p>Crispy pastry with spiced filling. Two pieces.</p>
+            <p class="price">PKR 320</p>
+          </article>
+          <article class="menu-card" data-category="snacks">
+            <div class="menu-icon" aria-hidden="true">🥪</div>
+            <h3>Bun Kabab</h3>
+            <p>Soft bun, chutney, and a savoury patty.</p>
+            <p class="price">PKR 450</p>
+          </article>
+          <article class="menu-card" data-category="snacks">
+            <div class="menu-icon" aria-hidden="true">🍟</div>
+            <h3>Masala Fries</h3>
+            <p>Crisp fries tossed with café spices.</p>
+            <p class="price">PKR 380</p>
+          </article>
+          <article class="menu-card" data-category="sweets">
+            <div class="menu-icon" aria-hidden="true">🍮</div>
+            <h3>Gajar Halwa Cup</h3>
+            <p>Warm carrot dessert with pistachio notes.</p>
+            <p class="price">PKR 420</p>
+          </article>
+          <article class="menu-card" data-category="sweets">
+            <div class="menu-icon" aria-hidden="true">🍰</div>
+            <h3>Chocolate Brownie</h3>
+            <p>Dense, fudgy slice with a chai pairing in mind.</p>
+            <p class="price">PKR 390</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-preview" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <h2 id="about-heading">About Us</h2>
+          <p>
+            Chai Corner began as a simple idea: a modern Pakistani café where hospitality feels personal and every cup
+            is poured with intention. This page content is fictional demonstration copy for DISC 472 Lab 17.
+          </p>
+          <a class="btn btn-primary" href="about.html">Read Our Story</a>
+        </div>
+        <div class="about-panel">
+          <h3>What we value</h3>
+          <ul>
+            <li>Warm welcome for every guest</li>
+            <li>Honest ingredients and careful preparation</li>
+            <li>A calm space for conversation</li>
+          </ul>
+          <p class="meta">Concept date: 23 November 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-heading">Contact</h2>
+          <p>
+            Send a demonstration enquiry. This form validates your details in the browser and does not send email or store data.
+          </p>
+          <ul class="contact-details">
+            <li><strong>Demo location:</strong> Gulberg, Lahore</li>
+            <li><strong>Demo hours:</strong> Daily, 9:00 am – 11:00 pm</li>
+            <li><strong>Demo phone:</strong> 03001234567</li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <p class="field-error" id="name-error" hidden></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <p class="field-error" id="email-error" hidden></p>
+          </div>
+          <div class="field">
+            <label for="phone">Phone (11 digits)</label>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" required maxlength="11" />
+            <p class="field-error" id="phone-error" hidden></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <p class="field-error" id="message-error" hidden></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Demo Enquiry</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Chai Corner</strong>
+        <p>Your Daily Cup of Happiness</p>
+      </div>
+      <div>
+        <p>Demonstration café website for DISC 472 Lab 17.</p>
+        <p>Roll number 27110158</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
